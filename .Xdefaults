@@ -1,0 +1,27 @@
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800 
+! macros for resize-font - sudo pacman -S urxvt-resize-font-git
+URxvt.resize-font.step:   1
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.keysym.C-Down:      resize-font:smaller
+URxvt.keysym.C-Up:        resize-font:bigger
+
+! macros for clipboard and selection
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+!URxvt.keysym.M-c:       perl:clipboard:copy
+!URxvt.keysym.M-v:       perl:clipboard:paste
+!URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
+!URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.M-s:       keyboard-select:search
+URxvt.keysym.M-u:       url-select:select_next
+
+
+! clipboard
+URxvt.keysym.Control-Shift-C: clipboard:copy
+URxvt.keysym.Control-Shift-V: clipboard:paste
+
+
